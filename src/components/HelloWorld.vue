@@ -27,7 +27,7 @@
     <nav class="HolyGrail-nav">...</nav>
     <aside class="HolyGrail-ads">...</aside>
   </div>
-  <footer>...</footer>
+  <footer>..123.</footer>
 </div>
 <hr/>
 <div class="InputAddOn">
