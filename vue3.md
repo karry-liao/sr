@@ -14,8 +14,8 @@
 
 #### 通过\$mount 实例方法去挂载 vm，`$mount` 方法支持传入 2 个参数，第一个是 `el`，它表示挂载的元素，可以是字符串，也可以是 DOM 对象，如果是字符串在浏览器环境下会调用 `query` 方法转换成 DOM 对象的。第二个参数是和服务端渲染相关，在浏览器环境下我们不需要传第二个参数。`$mount` 方法实际上会去调用 `mountComponent` 方法，mountComponent 核心就是先实例化一个渲染`Watcher`，在它的回调函数中会调用 `updateComponent` 方法，在此方法中调用 `vm._render` 方法先生成虚拟 Node，最终调用 `vm._update` 更新 DOM。
 
-![Vue流程图](https://i.bmp.ovh/imgs/2022/04/24/2a1534b5e777c3a7.png)
-
+![Vue流程图](https://i.bmp.ovh/imgs/2022/04/24/2a1534b5e777c3a7.png)   
+ 
 ## 组件化
 
 构造子类构造函数，安装组件钩子函数和实例化 `vnode`。
